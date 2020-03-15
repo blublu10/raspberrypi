@@ -2,7 +2,7 @@
 #include<wiringPi.h>
 
 
-#define ButtonPin 1 //define Button pin
+#define buttonPin 1 //define Button pin
 #define ledPin 0   //define LED pin
 
 int main(void)
