@@ -9,7 +9,7 @@ int main(void)
 {
     if(wiringPiSetup() == -1) //wiringPi initialize failed
     {
-        printf("WiringPi Initialize failed /n");
+        printf("WiringPi Initialize failed \n");
         return 1;
     }
 
@@ -23,12 +23,12 @@ int main(void)
         if(digitalRead(buttonPin) == LOW) //button is pressed down turn on the LED
         {
             digitalWrite(ledPin, HIGH);
-            printf("Button Pressed down turn ON LED /n");
+            printf("Button Pressed down turn ON LED \n");
         }
         else //button released turn off LED
         {
             digitalWrite(ledPin, LOW);
-            printf("Button Released turn Off LED /n");
+            printf("Button Released turn Off LED \n");
         }
     }
     return 0;
