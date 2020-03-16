@@ -32,7 +32,7 @@ int main(void)
 
     for(i=0;i<leds;i++)
     {
-        digitalMode(pins[i], OUTPUT);
+        pinMode(pins[i], OUTPUT);
     }
 
     while(1)
