@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<wiringPi.h>
 
-using namespace std;
 
 #define ledPin 0
 #define buttonPin 1
