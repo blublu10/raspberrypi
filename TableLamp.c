@@ -30,7 +30,7 @@ int main(void)
     while(1)
     {
        reading = digitalRead(buttonPin);
-       printf("reading = %d \n",reading);
+
        if(reading != lastbuttonState)
        {
            lastChangeTime = millis();
@@ -38,11 +38,11 @@ int main(void)
 
        if((millis() - lastChangeTime) > captureTime) //accept this as button change and not buffeting
        {
-           printf("accepted button change \n");
+
 
            if(buttonState != reading)
            {
-               printf("new buttonstate \n");
+
                buttonState = reading;
                if(buttonState == LOW) //button is pressed
                {
