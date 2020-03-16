@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<WiringPi.h>
+#include<wiringPi.h>
 
 using namespace std;
 
