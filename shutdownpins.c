@@ -20,11 +20,13 @@ if(wiringPiSetup() == -1)
 
     printf("Program is starting \n");
 
+     int i;
+
     for(i=0;i<leds;i++)
     {
         pinMode(pins[i], OUTPUT);
     }
-    int i;
+
     while(1)
     {
         for(i=0;i<leds;i++)
