@@ -62,7 +62,7 @@ int main(void)
 
        }
 
-       digitalWrite(ledPin, ledstate);
+       digitalWrite(ledPin, ledState);
        lastbuttonState = buttonState;
 
 
