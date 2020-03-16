@@ -3,7 +3,7 @@
 
 #define leds 10
 
-int pins[leds] = {0,1,2,3,4,5,6,,8,9,10};
+int pins[leds] = {0,1,2,3,4,5,6,8,9,10};
 
 void led_on(int pin)
 {
@@ -28,21 +28,23 @@ int main(void)
 
     printf("Program is starting \n");
 
-    for(int i=0;i<leds;i++)
+    int i;
+
+    for(i=0;i<leds;i++)
     {
         digitalMode(pins[i], OUTPUT);
     }
 
     while(1)
     {
-        for(int i=0;i<leds;i++)
+        for(i=0;i<leds;i++)
         {
             led_on(pins[i]);
             delay(100);
             led_off(pins[i]);
         }
 
-        for(int i= (leds - 1);i>=0;i--)
+        for(i= (leds - 1);i>=0;i--)
         {
             led_on(pins[i]);
             delay(100);
