@@ -67,7 +67,7 @@ int main(void)
        }
 
        digitalWrite(ledPin, ledState);
-       lastbuttonState = buttonState;
+       lastbuttonState = reading;
 
 
     }
