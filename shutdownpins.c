@@ -4,9 +4,9 @@
 #define leds 10
 int pins[leds] = {0,1,2,3,4,5,6,8,9,10};
 
-void led_off(int pin)
+void led_on(int pin)
 {
-    digitalWrite(pin,LOW);
+    digitalWrite(pin,HIGH);
 
 }
 
@@ -31,7 +31,9 @@ if(wiringPiSetup() == -1)
     {
         for(i=0;i<leds;i++)
         {
-            led_off(pins[i]);
+            printf(shutdown pins)
+            led_on(pins[i]);
+            delay(100);
         }
     }
 
