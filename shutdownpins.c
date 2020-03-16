@@ -1,5 +1,5 @@
-#include<stdio>
-#include<wiringPi>
+#include<stdio.h>
+#include<wiringPi.h>
 
 #define leds 10
 int pins[leds] = {0,1,2,3,4,5,6,8,9,10};
