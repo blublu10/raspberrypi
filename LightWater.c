@@ -7,13 +7,13 @@ int pins[leds] = {0,1,2,3,4,5,6,8,9,10};
 
 void led_on(int pin)
 {
-    digitalWrite(pin,HIGH);
+    digitalWrite(pin,LOW);
 
 }
 
 void led_off(int pin)
 {
-    digitalWrite(pin,LOW);
+    digitalWrite(pin,HIGH);
 
 }
 
