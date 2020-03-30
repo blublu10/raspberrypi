@@ -20,7 +20,7 @@ int main(void)
         return 1;
     }
 
-    pin8591Setup(pinbase, address);
+    /*pin8591Setup(pinbase, address);
     softPwmCreate(ledPin,0,100);
 
     int value;
@@ -33,7 +33,7 @@ int main(void)
         voltage = (float)value /255.0 * 3.3; //calculate voltage
         printf("ADC value : %d, \tVoltage : %.2f \n",value,voltage);
         delay(100);
-    }
+    }*/
 
     return 0;
 }
