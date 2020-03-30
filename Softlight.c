@@ -20,7 +20,7 @@ int main(void)
         return 1;
     }
 
-    pin8591Setup(pinbase, address);
+    pcf8591Setup(pinbase, address);
     softPwmCreate(ledPin,0,100);
 
     int value;
