@@ -13,7 +13,7 @@ int main(void)
     if(wiringPiSetup() == -1)
     {
         printf("WringPi initialization unsuccessful /n");
-        retun 1;
+        return 1;
     }
 
     pcf8591Setup(pinbase, address);
