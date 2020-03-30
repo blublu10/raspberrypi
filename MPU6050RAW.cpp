@@ -18,13 +18,13 @@ void setup()
     //verify connection
     printf("Testing device connection \n");
 
-    printf(accelgryo.testconnection() ? "MPU6050 connection successful \n" : "MPU6050 connection failed \n");
+    printf(accelgyro.testconnection() ? "MPU6050 connection successful \n" : "MPU6050 connection failed \n");
 }
 
 void loop()
 {
     //read raw accel/gyro measurements from device
-    accelgyro.getMotion(&ax, &ay, &az, &gx, &gy, &gz);
+    accelgyro.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
     printf("a/g: %6hd %6hd %6hd    %6hd %6hd %6hd\n",ax,ay,az,gx,gy,gz);
     printf("a/g: %.2f g %.2f g %.2f g     %.2f d.s %.2f d/s %.2f d/s\n",(float)ax/16384,(float)ay/16384,(float)az/16384,(float)gx/131,(float)gy/131,(float)gz/131);
 }
