@@ -18,7 +18,7 @@ void setup()
     //verify connection
     printf("Testing device connection \n");
 
-    printf(accelgyro.testconnection() ? "MPU6050 connection successful \n" : "MPU6050 connection failed \n");
+    printf(accelgyro.testConnection() ? "MPU6050 connection successful \n" : "MPU6050 connection failed \n");
 }
 
 void loop()
