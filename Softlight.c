@@ -1,10 +1,10 @@
-#include<stdio.h>
 #include<wiringPi.h>
 #include<pcf8591.h>
+#include<stdio.h>
 #include<softPwm.h>
 
-#define address 0x48
-#define pinbase 64
+#define address 0x48  //pcf8591 default address (I2C address)
+#define pinbase 64    //any number above 64
 #define A0 pinbase + 0
 #define A1 pinbase + 1
 #define A2 pinbase + 2
