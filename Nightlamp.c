@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<softPwm.h>
 
-#define address
+#define address 0x48
 #define pinbase 64
 
 #define A0 pinbase + 0
