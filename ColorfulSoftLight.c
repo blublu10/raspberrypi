@@ -27,7 +27,7 @@ int main(void)
     softPwmCreate(ledGreenPin, 0, 100);
     softPwmCreate(ledBluePin, 0, 100);
 
-    pcf8591(pinbase, address);  //initialize pcf8591
+    pcf8591Setup(pinbase, address);  //initialize pcf8591
 
     while(1)
     {
