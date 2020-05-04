@@ -26,12 +26,12 @@ int main(void)
     while(1)
     {
         adcval = analogRead(A0);
-        voltage = float(adcval) /255.0*3.3;
+        voltage = (float)adcval /255.0*3.3;
         It = (3.3 - voltage)/10;//current across series circuit
         Rt = voltage/It; //Resitance of thermometer;
         tempK = 1/(1/(273.15 + 25) + log(Rt/10)/3950.0);
         tempC = tempK - 273.15;
-        printf("ADC value : %d, \tVoltage : %.2f, \Temperature : %.2fC\n",adcval,voltage,tempC);
+        printf("ADC value : %d, \tVoltage : %.2f, \tTemperature : %.2fC\n",adcval,voltage,tempC);
         delay(100);
     }
     return 0;
