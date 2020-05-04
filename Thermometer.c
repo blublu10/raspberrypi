@@ -12,7 +12,7 @@
 
 int main(void)
 {
-    if(!wiringPiSetup())
+    if(wiringPiSetup() == -1)
     {
         printf("Wiring Pi initialize failed exit\n");
         return 1;
