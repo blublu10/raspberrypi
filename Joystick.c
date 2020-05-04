@@ -1,5 +1,5 @@
 #include<wiringPi.h>
-#include<pfc8591.h>
+#include<pcf8591.h>
 #include<stdio.h>
 #include<softPwm.h>
 
