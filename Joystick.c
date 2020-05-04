@@ -29,7 +29,7 @@ int main(void)
     {
         valZ = digitalRead(Z_Pin);
         valY = analogRead(A0);
-        valZ = analogRead(A1);
+        valX = analogRead(A1);
         printf("val_X : %d, /tval_Y : %d, /tval_Z : %d\n",valX,valY,valZ);
         delay(100);
     }
