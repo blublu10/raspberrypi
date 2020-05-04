@@ -21,7 +21,7 @@ int main(void)
     float voltage, It, Rt;
     float tempK,tempC;
 
-    pcf8951Setup(pinbase,address);
+    pcf8591Setup(pinbase,address);
 
     while(1)
     {
